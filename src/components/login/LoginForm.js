@@ -67,8 +67,8 @@ class LoginForm extends Component {
                 window.location.href="/";   
             }, 1000);
         }catch(error){
-            alert('please check email or password')
-            console.error(error)
+            // alert('please check your email or password');
+            console.error(error);
         }
     }
 
