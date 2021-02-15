@@ -30,6 +30,10 @@ class SignUpForm extends Component {
             return;
         }
 
+        if(displayName === '' || email === '' ||  password === '' || confirmPassword === ''){
+            alert('please fill in all fields')
+        }
+
         try {
             const {user} = await auth.createUserWithEmailAndPassword(email, password);
 
